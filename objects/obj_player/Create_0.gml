@@ -4,6 +4,8 @@ gravity = .1;
 //começa sem animação
 image_speed = 0;
 
+//mudando a sprite do player
+sprite_index = global.sprite_player;
 
 
 //pulando

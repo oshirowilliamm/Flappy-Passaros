@@ -19,6 +19,13 @@ global.destino = rm_game;
 //variavel de controle para criar a transição
 global.transicao = true;
 
+//variavel para o bloqueio dos itens
+global.bloqueados = [false, true, true];
+
+//variavel para saber qual sprite do player
+global.sprite_player = spr_arara;
+
+
 //função para perder o jogo
 function perde_jogo()
 {
