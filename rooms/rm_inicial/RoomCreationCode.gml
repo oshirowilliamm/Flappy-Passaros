@@ -1,3 +1,6 @@
+//parando de tocar o som
+audio_stop_all();
+
 if (!global.transicao)
 {
     //criando a transição
