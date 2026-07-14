@@ -13,6 +13,9 @@
             //subindo level
             global.level++;
             
+            //tocando som do level up
+            audio_play_sound(snd_levelup, 10, 0);
+            
             //aumentando velocidade do background
             layer_hspeed("bg_arvores",          (- global.level - 1));
             layer_hspeed("bg_reflexo_arvores",  (- global.level - 1) * .5);
