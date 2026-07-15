@@ -1,3 +1,6 @@
+//debug para ver o framerate do jogo
+//show_debug_overlay(true);
+
 randomise();
 
 //saber que o player perdeu
@@ -24,6 +27,9 @@ global.bloqueados = [false, true, true];
 
 //variavel para saber qual sprite do player
 global.sprite_player = spr_arara;
+
+//variavel de controle para ativar os efeitos
+global.efeitos = true;
 
 
 //função para perder o jogo
@@ -75,4 +81,14 @@ function muda_room()
 function liga_transicao()
 {
     global.transicao = true;
+}
+
+//função para ativar e desativar os efeitos
+function ativa_efeitos()
+{
+    layer_enable_fx("Folhas", global.efeitos);
+    layer_enable_fx("bg_reflexo_agua", global.efeitos);
+    layer_enable_fx("bg_reflexo_arvores", global.efeitos);
+    layer_enable_fx("bg_reflexo_lua", global.efeitos);
+    layer_enable_fx("Peixes", global.efeitos);
 }

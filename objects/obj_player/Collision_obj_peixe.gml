@@ -1,8 +1,8 @@
 //ganhando peixe
 global.peixes++;
 
-//tocando som
-var _pitch = random_range(0.8, 1.2);
+//tocando som de pegar
+var _pitch = random_range(0.7, 1.3);
 
 audio_play_sound(snd_pickup, 10, 0, , , _pitch);
 

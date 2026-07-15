@@ -13,7 +13,7 @@
             //subindo level
             global.level++;
             
-            //tocando som do level up
+            //tocando som de level up
             audio_play_sound(snd_levelup, 10, 0);
             
             //aumentando velocidade do background
